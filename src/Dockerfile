@@ -5,7 +5,7 @@ RUN apt-get update && \
         autoconf automake libtool pkg-config \
         curl git unzip wget wkhtmltopdf xvfb \
         python-dev python-setuptools apt-transport-https \
-        lsb-release openssh-client git
+        lsb-release openssh-client git zlib1g-dev
 RUN mkdir /home/gauche
 RUN cd /home/gauche && \
       wget http://practical-scheme.net/vault/Gauche-$gauche_version.tgz && \

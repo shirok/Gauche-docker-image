@@ -8,6 +8,10 @@ image:
 	   --build-arg gauche_version=$(VERSION) \
 	   .
 
+push:
+	docker push practicalscheme/gauche:$(VERSION)
+	docker push practicalscheme/gauche:$(TAG)
+
 run:
 	docker run -ti --rm  practicalscheme/gauche:$(VERSION)
 

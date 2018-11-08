@@ -3,6 +3,7 @@ Perform self-host-test on development HEAD.
 It pulls HEAD, compiles it on latest Gauche release, install it locally and
 compiles it again with the HEAD version, then runs 'make -s check'.
 
-Just invoke 'run' script in this directory to perform tests.
+Just invoke 'make run' to perform tests.
 
-
+If you modify Dockerfile or other settings and want to test locally
+(without making public images), say 'make run-ephemeral'.

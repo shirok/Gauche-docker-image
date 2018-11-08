@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir -p /home/gauche
+cd /home/gauche && rm -rf Gauche && git clone https://github.com/shirok/Gauche.git
+cd /home/gauche/Gauche && ./DIST self-host-test

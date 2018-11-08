@@ -2,11 +2,9 @@ FROM practicalscheme/gauche:@base_gauche_version@
 ARG base_gauche_version
 
 RUN apt-get install -y autoconf automake
+ADD scripts /scripts
 
-RUN cd /home/gauche && \
-      git clone https://github.com/shirok/Gauche.git
-
-CMD ["/bin/bash", "-c", "cd /home/gauche/Gauche; ./DIST self-host-test"]
+CMD ["/scripts/self-host-test"]
 
       
       

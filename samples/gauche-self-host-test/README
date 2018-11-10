@@ -1,7 +1,10 @@
-Perform self-host-test on development HEAD.
+Perform self host test on development HEAD.
 
-It pulls HEAD, compiles it on latest Gauche release, install it locally and
-compiles it again with the HEAD version, then runs 'make -s check'.
+It pulls HEAD, compiles it on latest Gauche release, install it and
+compiles itself again with the HEAD version, then runs 'make -s check'.
+
+Then it pulls several Gauche extension modules, compiles them and
+run tests for them.
 
 Just invoke 'make run' to perform tests.
 

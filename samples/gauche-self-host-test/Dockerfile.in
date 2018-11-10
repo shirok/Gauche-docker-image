@@ -3,7 +3,9 @@ ARG base_gauche_version
 
 RUN apt-get install -y autoconf automake \
        libglu1-mesa-dev freeglut3-dev mesa-common-dev libglew-dev \
-       libxmu-dev libxi-dev
+       libxmu-dev libxi-dev \
+       libgtk2.0-dev \
+       mysql-server default-libmysqlclient-dev
 ADD scripts /scripts
 
 CMD ["/scripts/self-host-test"]

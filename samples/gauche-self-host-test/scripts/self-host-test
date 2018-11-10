@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+export GAUCHE_KEYWORD_IS_SYMBOL=1
+
 mkdir -p /home/gauche
 cd /home/gauche
 rm -rf Gauche && git clone https://github.com/shirok/Gauche.git
@@ -38,4 +40,32 @@ cd Gauche-gl
 ./DIST gen
 ./configure && make -j && make -s check
 
+echo "#############################################################"
+echo "#"
+echo "#  Gauche-gtk2"
+echo "#"
+echo "#"
+cd /home/gauche
+git clone https://github.com/shirok/Gauche-gtk2.git
+cd Gauche-gtk2
+./DIST gen
+./configure
+make stubs
+make -j
+
+echo "#############################################################"
+echo "#"
+echo "#  Gauche-dbd-mysql"
+echo "#"
+echo "#"
+service mysql start
+cd /home/gauche
+git clone https://github.com/kahua/Gauche-dbd-mysql.git
+cd Gauche-dbd-mysql
+./DIST gen
+./configure
+make -j
+mysql < /scripts/mysql-setup.sql
+make -s check
+service mysql stop
 

@@ -1,7 +1,9 @@
 FROM practicalscheme/gauche:@base_gauche_version@
 ARG base_gauche_version
 
-RUN apt-get install -y autoconf automake
+RUN apt-get install -y autoconf automake \
+       libglu1-mesa-dev freeglut3-dev mesa-common-dev libglew-dev \
+       libxmu-dev libxi-dev
 ADD scripts /scripts
 
 CMD ["/scripts/self-host-test"]

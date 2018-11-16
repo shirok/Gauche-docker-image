@@ -1,4 +1,7 @@
-# mysql-server default-libmysqlclient-dev
+#packages:
+# mysql-server
+# default-libmysqlclient-dev
+#end:
 echo "#############################################################"
 echo "#"
 echo "#  Gauche-dbd-mysql"

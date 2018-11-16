@@ -1,4 +1,7 @@
-# libkakasi2-dev kakasi-dic
+#packages:
+# libkakasi2-dev
+# kakasi-dic
+#end:
 echo "#############################################################"
 echo "#"
 echo "#  Gauche-text-kakasi"

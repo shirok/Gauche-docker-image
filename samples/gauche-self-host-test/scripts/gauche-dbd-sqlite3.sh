@@ -1,4 +1,6 @@
+#packages:
 # libsqlite3-dev
+#end:
 echo "#############################################################"
 echo "#"
 echo "#  Gauche-dbd-sqlite3"

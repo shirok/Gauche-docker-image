@@ -1,4 +1,6 @@
+#packages:
 # libgtk2.0-dev
+#end:
 echo "#############################################################"
 echo "#"
 echo "#  Gauche-gtk2"

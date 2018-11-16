@@ -1,5 +1,11 @@
-# libglu1-mesa-dev freeglut3-dev mesa-common-dev libglew-dev \
-# libxmu-dev libxi-dev
+#packages:
+# libglu1-mesa-dev
+# freeglut3-dev
+# mesa-common-dev
+# libglew-dev
+# libxmu-dev
+# libxi-dev
+#end:
 echo "#############################################################"
 echo "#"
 echo "#  Gauche-gl"

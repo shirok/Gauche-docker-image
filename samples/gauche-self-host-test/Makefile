@@ -3,8 +3,8 @@
 VERSION=0.9.6
 BUILD=-build2
 
-Dockerfile : Dockerfile.in
-	sed 's/@base_gauche_version@/$(VERSION)/g' Dockerfile.in > Dockerfile
+Dockerfile : gen-dockerfile.sh
+	./gen-dockerfile.sh $(VERSION)
 
 image: Dockerfile
 	docker build \

@@ -4,7 +4,7 @@ VERSION=0.9.6
 BUILD=-build2
 TESTSCRIPTS=$(shell echo scripts/*.sh)
 
-Dockerfile : gen-dockerfile.sh $(TESTSCRIPTS)
+Dockerfile : gen-dockerfile.sh scripts/self-host-test $(TESTSCRIPTS)
 	./gen-dockerfile.sh $(VERSION)
 
 image: Dockerfile

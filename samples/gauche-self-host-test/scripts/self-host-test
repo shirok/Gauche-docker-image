@@ -7,6 +7,7 @@ mkdir -p /home/gauche
 
 . /scripts/core.sh
 . /scripts/gauche-gl.sh
+. /scripts/wiliki.sh
 . /scripts/gauche-gtk2.sh
 . /scripts/gauche-text-kakasi.sh
 . /scripts/gauche-dbd-mysql.sh

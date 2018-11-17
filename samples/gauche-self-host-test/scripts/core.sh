@@ -1,3 +1,8 @@
+#packages:
+# libgdbm-dev
+# zlib1g-dev
+# libmbedtls-dev
+#end:
 echo "#############################################################"
 echo "#"
 echo "#  Core Build with released Gauche"

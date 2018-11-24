@@ -10,6 +10,7 @@ mkdir -p /home/gauche
 . /scripts/wiliki.sh
 . /scripts/gauche-gtk2.sh
 . /scripts/gauche-text-kakasi.sh
+. /scripts/gauche-mecab.sh
 . /scripts/gauche-dbd-mysql.sh
 # it has test problem atm
 # . /scripts/gauche-dbd-mysql3.sh

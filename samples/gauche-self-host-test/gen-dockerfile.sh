@@ -14,7 +14,7 @@ rm -f Dockerfile
 cat > Dockerfile <<EOF
 FROM practicalscheme/gauche:$VERSION
 RUN apt-get update
-RUN apt-get install -y autoconf automake `echo $packages`
+RUN apt-get install -y autoconf automake sudo `echo $packages`
 EOF
 
 cat >> Dockerfile <<EOF

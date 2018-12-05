@@ -11,7 +11,7 @@ echo "#"
 echo "#"
 service postgresql start
 cd /home/gauche
-git clone https://github.com/kahua/Gauche-dbd-pg.git
+git clone --depth 1 https://github.com/kahua/Gauche-dbd-pg.git
 cd Gauche-dbd-pg
 ./DIST gen
 ./configure

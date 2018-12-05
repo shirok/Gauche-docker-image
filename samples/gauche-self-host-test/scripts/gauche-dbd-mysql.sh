@@ -9,7 +9,7 @@ echo "#"
 echo "#"
 service mysql start
 cd /home/gauche
-git clone https://github.com/kahua/Gauche-dbd-mysql.git
+git clone --depth 1 https://github.com/kahua/Gauche-dbd-mysql.git
 cd Gauche-dbd-mysql
 ./DIST gen
 ./configure

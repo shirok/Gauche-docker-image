@@ -8,7 +8,7 @@ echo "#  Gauche-mecab"
 echo "#"
 echo "#"
 cd /home/gauche
-git clone https://github.com/shirok/Gauche-mecab.git
+git clone --depth 1 https://github.com/shirok/Gauche-mecab.git
 cd Gauche-mecab
 ./DIST gen
 ./configure

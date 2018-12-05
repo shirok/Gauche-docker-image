@@ -8,7 +8,7 @@ echo "#"
 echo "#"
 cd /home/gauche
 rm -rf WiLiKi
-git clone https://github.com/shirok/WiLiKi.git
+git clone --depth 1 https://github.com/shirok/WiLiKi.git
 cd WiLiKi
 ./configure
 make -j

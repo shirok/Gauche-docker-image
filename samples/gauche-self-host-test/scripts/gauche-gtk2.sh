@@ -7,7 +7,7 @@ echo "#  Gauche-gtk2"
 echo "#"
 echo "#"
 cd /home/gauche
-git clone https://github.com/shirok/Gauche-gtk2.git
+git clone --depth 1 https://github.com/shirok/Gauche-gtk2.git
 cd Gauche-gtk2
 ./DIST gen
 ./configure

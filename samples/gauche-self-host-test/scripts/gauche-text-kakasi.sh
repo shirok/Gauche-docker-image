@@ -8,7 +8,7 @@ echo "#  Gauche-text-kakasi"
 echo "#"
 echo "#"
 cd /home/gauche
-git clone https://github.com/shirok/Gauche-text-kakasi.git
+git clone --depth 1 https://github.com/shirok/Gauche-text-kakasi.git
 cd Gauche-text-kakasi
 ./configure
 make -j

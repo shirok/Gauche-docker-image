@@ -9,7 +9,7 @@ echo "#  Core Build with released Gauche"
 echo "#"
 echo "#"
 cd /home/gauche
-rm -rf Gauche && git clone https://github.com/shirok/Gauche.git
+rm -rf Gauche && git clone --depth 1 https://github.com/shirok/Gauche.git
 (cd Gauche && ./DIST gen)
 cd /home/gauche
 rm -rf Gauche-build

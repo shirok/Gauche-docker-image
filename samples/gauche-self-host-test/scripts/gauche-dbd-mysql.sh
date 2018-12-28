@@ -11,7 +11,6 @@ service mysql start
 cd /home/gauche
 git clone --depth 1 https://github.com/kahua/Gauche-dbd-mysql.git
 cd Gauche-dbd-mysql
-./DIST gen
 ./configure
 make -j
 mysql < /scripts/mysql-setup.sql

@@ -3,6 +3,8 @@
 # zlib1g-dev
 # libmbedtls-dev
 #end:
+set -e
+
 echo "#############################################################"
 echo "#"
 echo "#  Core Build with released Gauche"

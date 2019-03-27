@@ -17,7 +17,11 @@ cd /home/gauche
 rm -rf Gauche-build
 mkdir Gauche-build
 cd Gauche-build
-../Gauche/configure --prefix=/usr && make -j && make -s check && make install && make -s install-check
+../Gauche/configure --prefix=/usr
+make -j
+make -s check
+make install
+make -s install-check
 
 echo "#############################################################"
 echo "#"
@@ -26,5 +30,9 @@ echo "#"
 echo "#"
 cd /home/gauche
 cd Gauche
-gauche-config --reconfigure | sh && make -j && make -s check && make install && make -s install-check
+gauche-config --reconfigure | sh
+make -j
+make -s check
+make install
+make -s install-check
 

@@ -13,6 +13,7 @@ mkdir -p /home/gauche
 . /scripts/gauche-mecab.sh
 . /scripts/gauche-dbd-mysql.sh
 . /scripts/gauche-dbd-pg.sh
+. /scripts/kahua.sh
 # it has test problem atm
 # . /scripts/gauche-dbd-mysql3.sh
 

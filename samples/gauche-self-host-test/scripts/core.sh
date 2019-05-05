@@ -29,10 +29,11 @@ echo "#  Core Build with self"
 echo "#"
 echo "#"
 cd /home/gauche
-cd Gauche
-gauche-config --reconfigure | sh
+rm -rf Gauche-build
+mkdir -p Gauche-build/build
+cd Gauche-build/build
+../../Gauche/configure --prefix=/usr
 make -j
 make -s check
 make install
 make -s install-check
-

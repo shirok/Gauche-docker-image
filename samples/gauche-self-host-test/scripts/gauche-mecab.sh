@@ -10,7 +10,6 @@ echo "#"
 cd /home/gauche
 git clone --depth 1 https://github.com/shirok/Gauche-mecab.git
 cd Gauche-mecab
-./DIST gen
 ./configure
 make -j
 make -s check

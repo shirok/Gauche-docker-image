@@ -2,6 +2,7 @@
 set -e
 
 export GAUCHE_KEYWORD_IS_SYMBOL=1
+export GAUCHE_CHECK_UNDEFINED_TEST=1
 
 mkdir -p /home/gauche
 

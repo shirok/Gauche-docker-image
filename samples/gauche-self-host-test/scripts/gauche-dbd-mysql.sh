@@ -1,5 +1,5 @@
 #packages:
-# mysql-server
+# default-mysql-server
 # default-libmysqlclient-dev
 #end:
 echo "#############################################################"

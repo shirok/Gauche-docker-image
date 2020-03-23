@@ -10,3 +10,11 @@ Just invoke 'make run' to perform tests.
 
 If you modify Dockerfile or other settings and want to test locally
 (without making public images), say 'make run-ephemeral'.
+
+To add a new package test:
+
+- Create ./scripts/$PACKAGE.sh
+- Source it from ./scripts/self-host-test
+- Bump build number in Makefile
+- make image && make run-ephemeral to test
+- make push to publish

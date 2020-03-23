@@ -1,7 +1,7 @@
 .PHONY: image push run clean
 
 VERSION=0.9.9
-BUILD=-build2
+BUILD=-build3
 TESTSCRIPTS=$(shell echo scripts/*.sh)
 
 Dockerfile : gen-dockerfile.sh scripts/self-host-test $(TESTSCRIPTS)

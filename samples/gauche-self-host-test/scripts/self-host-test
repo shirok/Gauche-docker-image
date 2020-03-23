@@ -15,6 +15,7 @@ mkdir -p /home/gauche
 . /scripts/gauche-dbd-mysql.sh
 . /scripts/gauche-dbd-pg.sh
 . /scripts/kahua.sh
+. /scripts/gauche-tk.sh
 # it has test problem atm
 # . /scripts/gauche-dbd-mysql3.sh
 

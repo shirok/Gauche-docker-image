@@ -3,7 +3,8 @@ ARG gauche_version
 RUN apt-get update && \
     apt-get install -y build-essential \
         libtool pkg-config curl git unzip  \
-        openssh-client zlib1g-dev
+        openssh-client zlib1g-dev \
+        libmbedtls-dev ca-certificates
 RUN mkdir /home/gauche
 RUN cd /home/gauche && \
       curl https://raw.githubusercontent.com/shirok/get-gauche/master/get-gauche.sh > get-gauche.sh && \

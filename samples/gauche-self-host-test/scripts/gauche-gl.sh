@@ -5,6 +5,7 @@
 # libglew-dev
 # libxmu-dev
 # libxi-dev
+# libglfw3-dev
 #end:
 echo "#############################################################"
 echo "#"
@@ -15,5 +16,4 @@ cd /home/gauche
 rm -rf Gauche-gl
 git clone --depth 1 https://github.com/shirok/Gauche-gl.git
 cd Gauche-gl 
-./DIST gen
 ./configure && make -j && make -s check

@@ -23,4 +23,3 @@ run-ephemeral: Dockerfile
 
 clean:
 	rm -f Dockerfile *~ scripts/*~
-

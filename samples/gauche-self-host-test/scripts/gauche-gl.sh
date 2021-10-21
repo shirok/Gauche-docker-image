@@ -15,5 +15,5 @@ echo "#"
 cd /home/gauche
 rm -rf Gauche-gl
 git clone --depth 1 https://github.com/shirok/Gauche-gl.git
-cd Gauche-gl 
+cd Gauche-gl
 ./configure && make -j && make -s check

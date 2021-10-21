@@ -12,4 +12,3 @@ cd Gauche-tk
 ./configure
 make
 make -s check
-

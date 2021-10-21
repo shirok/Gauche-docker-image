@@ -18,4 +18,3 @@ mkdir -p /home/gauche
 . /scripts/gauche-tk.sh
 # it has test problem atm
 # . /scripts/gauche-dbd-mysql3.sh
-

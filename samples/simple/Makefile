@@ -3,4 +3,3 @@ image:
 
 run:
 	docker run --rm -p 6789:6789 practicalscheme/sample-simple
-

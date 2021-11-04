@@ -14,5 +14,3 @@ push:
 
 run:
 	docker run -ti --rm  practicalscheme/gauche:$(VERSION)
-
-

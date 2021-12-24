@@ -6,6 +6,7 @@
 # libxmu-dev
 # libxi-dev
 # libglfw3-dev
+# libvulkan-dev
 #end:
 echo "#############################################################"
 echo "#"

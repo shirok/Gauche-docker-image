@@ -5,7 +5,7 @@ echo "#"
 echo "#  Kahua"
 echo "#"
 echo "#"
-service mysql start
+service mariadb start
 cd /home/gauche
 git clone --depth 1 https://github.com/kahua/Kahua.git
 cd Kahua
@@ -13,4 +13,4 @@ cd Kahua
 ./configure
 make -j
 make -s check
-service mysql stop
+service mariadb stop || :

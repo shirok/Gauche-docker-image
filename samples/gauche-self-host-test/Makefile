@@ -1,7 +1,7 @@
 .PHONY: image push run clean
 
 VERSION=0.9.11
-BUILD=-build1
+BUILD=-build2
 TESTSCRIPTS=$(shell echo scripts/*.sh)
 
 Dockerfile : gen-dockerfile.sh scripts/self-host-test $(TESTSCRIPTS)
@@ -17,6 +17,9 @@ push: image
 
 run:
 	docker run -ti --rm practicalscheme/gauche-self-host-test:$(VERSION)$(BUILD)
+
+run-sh:
+	docker run -ti --rm practicalscheme/gauche-self-host-test:$(VERSION)$(BUILD) /bin/bash
 
 run-ephemeral: Dockerfile
 	docker run --rm -ti `docker build -q .`

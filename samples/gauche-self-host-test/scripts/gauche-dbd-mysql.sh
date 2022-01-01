@@ -7,7 +7,7 @@ echo "#"
 echo "#  Gauche-dbd-mysql"
 echo "#"
 echo "#"
-service mysql start
+service mariadb start
 cd /home/gauche
 git clone --depth 1 https://github.com/kahua/Gauche-dbd-mysql.git
 cd Gauche-dbd-mysql
@@ -15,4 +15,4 @@ cd Gauche-dbd-mysql
 make -j
 mysql < /scripts/mysql-setup.sql
 make -s check
-service mysql stop
+service mariadb stop || :

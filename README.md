@@ -56,11 +56,15 @@ Access to `http://localhost:6789/` and you'll get a response.
 
 ### Running a Gauche REPL without installing Gauche
 
-You can run Gauche REPL and interact from your terminal:
+The docker image is set to run Gauche REPL by default, so
+you can run REPL without installing Gauche:
 
 ```
-docker run --rm -ti practicalscheme/gauche /usr/bin/gosh -i
+docker run --rm -ti practicalscheme/gauche
 ```
+
+Note that, however, the REPL runs inside the Docker environment,
+so it cannot refer to your local file.
 
 Note: By default, `gosh` runs with line-editing enabled.
 If you run it inside Emacs shell mode, it will interfere with

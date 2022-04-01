@@ -12,4 +12,5 @@ RUN cd /home/gauche && \
       ./get-gauche.sh --prefix /usr --version $gauche_version --auto
 RUN cd /home/gauche && git clone https://github.com/shirok/Gauche-makiki.git
 RUN cd /home/gauche/Gauche-makiki && ./configure && make && make install
+COPY gosh-script /usr/bin/gosh-script
 CMD ["/usr/bin/gosh", "-i"]

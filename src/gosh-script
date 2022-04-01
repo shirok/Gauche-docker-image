@@ -1,0 +1,4 @@
+#!/bin/bash
+# Invoke this script with mounting the script's directory to /home/app.
+# See samples/local-script
+cd /home/app && /usr/bin/gosh "$@"

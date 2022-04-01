@@ -74,3 +74,33 @@ Emacs editing, so you'd want to use `-fno-read-edit` option:
 ```
 docker run --rm -ti practicalscheme/gauche /usr/bin/gosh -i -fno-read-edit
 ```
+
+### Running a local Gauche script without installing Gauche
+
+To run Gauche script on your machine with `gosh` in the Docker, you need
+to make your script visible from the Docker.
+
+The Docker image contains a script `/usr/bin/gosh-script` which chdir
+to `/home/app` and run `gosh`.  Mounting the local script directory as
+`/home/app` in the Docker and run `/usr/bin/gosh-script` in the Docker
+allows `gosh` to read the script and other stuff under the directory.
+
+See [`samples/local-script`](samples/local-script).  It has a shell
+script that does the job.  Go down to the directory and try this:
+
+
+```
+./run-gosh-in-docker.sh script.scm
+```
+
+It will show:
+
+```
+Loading mylib.b
+Loading mylib.a
+Running local script
+This is input data
+```
+
+See `script.scm` to find out the local libraries and files are read
+by `gosh`.

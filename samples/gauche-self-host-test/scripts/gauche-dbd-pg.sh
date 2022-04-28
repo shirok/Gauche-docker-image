@@ -13,7 +13,6 @@ service postgresql start
 cd /home/gauche
 git clone --depth 1 https://github.com/kahua/Gauche-dbd-pg.git
 cd Gauche-dbd-pg
-./DIST gen
 ./configure
 make -j
 sudo -u postgres createuser root

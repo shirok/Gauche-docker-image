@@ -1,4 +1,4 @@
-VERSION=0.9.11-p1
+VERSION=0.9.12
 TAG=latest
 
 image:

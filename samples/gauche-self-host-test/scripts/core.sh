@@ -5,6 +5,8 @@
 #end:
 set -e
 
+export GAUCHE_CHECK_UNDEFINED_TEST=1
+
 echo "#############################################################"
 echo "#"
 echo "#  Core Build with released Gauche"

@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:testing
 ARG gauche_version
 RUN apt-get update && \
     apt-get install -y build-essential \

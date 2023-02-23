@@ -17,5 +17,8 @@ cd Gauche-dbd-pg
 make -j
 sudo -u postgres createuser root
 sudo -u postgres createdb root
+sudo -u postgres psql -d root <<EOF
+GRANT ALL ON SCHEMA public TO root;
+EOF
 make -s check
 service postgresql stop

@@ -1,6 +1,6 @@
 .PHONY: image push run clean
 
-VERSION=0.9.14
+VERSION=0.9.15
 BUILD=-build1
 TESTSCRIPTS=$(shell echo scripts/*.sh)
 

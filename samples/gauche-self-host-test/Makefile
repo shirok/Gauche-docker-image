@@ -8,7 +8,7 @@ Dockerfile : gen-dockerfile.sh scripts/self-host-test $(TESTSCRIPTS)
 	./gen-dockerfile.sh $(VERSION)
 
 image: Dockerfile
-	docker build \
+	docker buildx build \
 	  -t practicalscheme/gauche-self-host-test:$(VERSION)$(BUILD) \
 	  .
 
